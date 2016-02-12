@@ -6,15 +6,19 @@
     <title>08_template</title>
     <style>
     #chart1 {
-        background: yellow;
+        background: rgb(81, 172, 247);
     }
     </style>
 </head>
 
 <body>
-<h3>Wifi signal strength <span id="signal">...</span></h3>
+<div class="container">
+  <h2>WiFi Signal Strength</h2>
+  <div class="well"><span id="signal">...</span></div>
+</div>
+
     <div>
-        <canvas id="chart1" height="450" width="600"></canvas>
+        <canvas id="chart1" height="450" width="1000"></canvas>
     </div>
     <script src="/socket.io/socket.io.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
@@ -22,13 +26,13 @@
 
     <script>
     lineChartData = {
-        labels: ["-9", "-8", "-7", "-6", "-5", "-4", "-3", "-2", "-1", "now"],
+        labels: ["-15","-14","-13","-12","-11" ,"-10", "-9", "-8", "-7", "-6", "-5", "-4", "-3", "-2", "-1", "now"],
         datasets: [{
             // fillColor: "rgba(151,187,205,0.5)",
             // strokeColor: "rgba(151,187,205,1)",
             // pointColor: "rgba(151,187,205,1)",
             // pointStrokeColor: "#fff",
-            data: [null,null,null,null,null,null,null,null,null,null]
+            data: [null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
         }]
     };
 
